@@ -1,0 +1,110 @@
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{background}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{caption}
+
+% Set margins and spacing
+\geometry{
+    a4paper,
+    left=25mm,
+    right=25mm,
+    top=30mm,
+    bottom=30mm,
+}
+\setstretch{1.5} % Adjust line spacing
+
+% Set background color
+\pagecolor[HTML]{E6E6FA} % Light violet background color
+
+% Background image
+\backgroundsetup{
+  scale=1,
+  color=black,
+  opacity=0.2,
+  angle=0,
+  position=current page.south,
+  vshift=5cm,
+  hshift=0cm,
+  contents={\includegraphics[width=\paperwidth]{background.png}} % Ensure the image is uploaded
+}
+
+% Page header and footer
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\textcolor{gray}{Cloud Computing Overview}}
+\fancyhead[R]{\textcolor{gray}{\thepage}}
+\fancyfoot[C]{\textcolor{gray}{\footnotesize Cloud Computing Lab - Assignment-2}}
+
+% Title format
+\title{\textbf{\textcolor{blue}{Cloud Computing: An Overview}}}
+\author{\textbf{\textcolor{gray}{SAHIL KOSHRIYA}}}
+\date{\textcolor{gray}{\today}}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+\textcolor{black}{
+Cloud computing is a revolutionary technology that allows businesses and individuals to store, manage, and process data over the internet, rather than on local servers or personal computers. It offers scalability, flexibility, and cost-effectiveness, making it an ideal solution for various applications, from small startups to large enterprises. Cloud services are typically divided into three categories: Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS). Each of these services provides different levels of control, management, and flexibility to the end-user. The adoption of cloud computing continues to grow as more organizations recognize the benefits of moving their operations to the cloud.
+}
+
+\section{Data Summary}
+\begin{table}[h]
+    \centering
+    \arrayrulecolor{blue}
+    \begin{tabular}{|c|c|c|c|}
+        \hline
+        \rowcolor{gray!20}
+        \textbf{ID} & \textbf{Name} & \textbf{Age} & \textbf{Occupation} \\
+        \hline
+        1 & SAHIL KOSHRIYA & 23 & Software Engineer \\
+        \hline
+        2 & Ashutosh Ghule & 34 & Cloud Developer \\
+        \hline
+        3 & Mansi Rai & 22 & Software Engineer \\
+        \hline
+        4 & Jyoti Rajpoot & 45 & Software Engineer \\
+        \hline
+        5 & Dipti Kumari & 45 & Cloud Developer \\
+        \hline
+        6 & Ayush Shrivastav & 45 & Cloud Server Engineer \\
+        \hline
+        7 & Maynak Harnotiya & 45 & Cloud Computing Engineer \\
+        \hline
+        8 & Kajal Mehra & 45 & Cloud Computing Engineer \\
+        \hline
+    \end{tabular}
+    \caption{\textcolor{blue}{Details of Engineers}}
+    \label{tab:sample}
+\end{table}
+
+\section{Visual Representation}
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=15cm]{cloudbot.jpg} % Ensure the image is uploaded
+    \caption{\textbf{Leora..}}
+    \label{fig:image1}
+\end{figure}
+
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=18cm]{componentcloud.png} % Ensure the image is uploaded
+    \caption{\textcolor{blue}{Component Cloud}}
+    \label{fig:image2}
+\end{figure}
+
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=20cm]{cloudimpli.jpg} % Ensure the image is uploaded
+    \caption{\textcolor{blue}{Cloud Implementation}}
+    \label{fig:image3}
+\end{figure}
+
+\footnote{\textcolor{gray}{Cloud Computing Lab - Assignment-2}}
+
+\end{document}
